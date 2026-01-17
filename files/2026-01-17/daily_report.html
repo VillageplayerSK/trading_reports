@@ -1,0 +1,976 @@
+
+    <html>
+    <head>
+        <title>Daily Trading Report – 2026-01-17</title>
+        <style>
+            body {
+                background:#111;
+                color:#eee;
+                font-family:Arial;
+            }
+            .tab-btn {
+                padding:10px 15px;
+                margin-right:10px;
+                cursor:pointer;
+            }
+            .group { display:none; }
+            .ticker-btn {
+                display:block;
+                width:100%;
+                text-align:left;
+                padding:6px;
+                margin:2px 0;
+                background:#222;
+                color:#eee;
+                border:none;
+                cursor:pointer;
+            }
+            .ticker-btn:hover { background:#333; }
+            .ticker-content { display:none; }
+        
+            .chart {
+                width: 100%;
+                max-width: 1400px;   /* desktop-friendly */
+                margin: 20px auto 40px auto;
+                display: block;
+            }
+        </style>
+        <script>
+            function showGroup(group) {
+                document.querySelectorAll('.group').forEach(g => g.style.display='none');
+                document.getElementById('group-' + group).style.display='block';
+            }
+
+            function showTicker(ticker) {
+                document.querySelectorAll('.ticker-content')
+                    .forEach(c => c.style.display='none');
+                document.getElementById('ticker-' + ticker).style.display='block';
+            }
+        </script>
+    </head>
+    <body>
+        <h1>Daily Trading Report – 2026-01-17</h1>
+
+        <div><button class="tab-btn" onclick="showGroup('Top 25')">Top 25</button><button class="tab-btn" onclick="showGroup('Bottom 25')">Bottom 25</button><button class="tab-btn" onclick="showGroup('Custom')">Custom</button></div>
+
+        <div class="layout">
+            
+        <div class="group" id="group-Top 25">
+            <div class="ticker-list">
+                <button class="ticker-btn" onclick="showTicker('LEU')">LEU</button><button class="ticker-btn" onclick="showTicker('QUIK')">QUIK</button><button class="ticker-btn" onclick="showTicker('AMRX')">AMRX</button><button class="ticker-btn" onclick="showTicker('DTI')">DTI</button><button class="ticker-btn" onclick="showTicker('STTK')">STTK</button><button class="ticker-btn" onclick="showTicker('NERV')">NERV</button><button class="ticker-btn" onclick="showTicker('VOR')">VOR</button><button class="ticker-btn" onclick="showTicker('DGII')">DGII</button><button class="ticker-btn" onclick="showTicker('SND')">SND</button><button class="ticker-btn" onclick="showTicker('RIOT')">RIOT</button><button class="ticker-btn" onclick="showTicker('SBET')">SBET</button><button class="ticker-btn" onclick="showTicker('SCWO')">SCWO</button><button class="ticker-btn" onclick="showTicker('PSNY')">PSNY</button><button class="ticker-btn" onclick="showTicker('TNGX')">TNGX</button><button class="ticker-btn" onclick="showTicker('FLWS')">FLWS</button><button class="ticker-btn" onclick="showTicker('FORM')">FORM</button><button class="ticker-btn" onclick="showTicker('TATT')">TATT</button><button class="ticker-btn" onclick="showTicker('TSAT')">TSAT</button><button class="ticker-btn" onclick="showTicker('RGLD')">RGLD</button><button class="ticker-btn" onclick="showTicker('SRTS')">SRTS</button><button class="ticker-btn" onclick="showTicker('WING')">WING</button><button class="ticker-btn" onclick="showTicker('ECX')">ECX</button><button class="ticker-btn" onclick="showTicker('ACET')">ACET</button><button class="ticker-btn" onclick="showTicker('USAR')">USAR</button><button class="ticker-btn" onclick="showTicker('FDIG')">FDIG</button>
+            </div>
+            <div class="ticker-plots">
+                
+            <div class="ticker-content" id="ticker-LEU">
+                <div class="weekly-context">
+                    <img
+                        class="chart"
+                        src="graphs_top_bottom/LEU/LEU_WEEKLY_CONTEXT.png"
+                        onerror="this.parentElement.style.display='none'"
+                    >
+                </div>
+                <img src="graphs_top_bottom/LEU/LEU_PRICE_STRUCTURE.png">
+                <img src="graphs_top_bottom/LEU/LEU_MACD.png">
+                <img src="graphs_top_bottom/LEU/LEU_BOLLINGER_EMA.png">
+            </div>
+            
+            <div class="ticker-content" id="ticker-QUIK">
+                <div class="weekly-context">
+                    <img
+                        class="chart"
+                        src="graphs_top_bottom/QUIK/QUIK_WEEKLY_CONTEXT.png"
+                        onerror="this.parentElement.style.display='none'"
+                    >
+                </div>
+                <img src="graphs_top_bottom/QUIK/QUIK_PRICE_STRUCTURE.png">
+                <img src="graphs_top_bottom/QUIK/QUIK_MACD.png">
+                <img src="graphs_top_bottom/QUIK/QUIK_BOLLINGER_EMA.png">
+            </div>
+            
+            <div class="ticker-content" id="ticker-AMRX">
+                <div class="weekly-context">
+                    <img
+                        class="chart"
+                        src="graphs_top_bottom/AMRX/AMRX_WEEKLY_CONTEXT.png"
+                        onerror="this.parentElement.style.display='none'"
+                    >
+                </div>
+                <img src="graphs_top_bottom/AMRX/AMRX_PRICE_STRUCTURE.png">
+                <img src="graphs_top_bottom/AMRX/AMRX_MACD.png">
+                <img src="graphs_top_bottom/AMRX/AMRX_BOLLINGER_EMA.png">
+            </div>
+            
+            <div class="ticker-content" id="ticker-DTI">
+                <div class="weekly-context">
+                    <img
+                        class="chart"
+                        src="graphs_top_bottom/DTI/DTI_WEEKLY_CONTEXT.png"
+                        onerror="this.parentElement.style.display='none'"
+                    >
+                </div>
+                <img src="graphs_top_bottom/DTI/DTI_PRICE_STRUCTURE.png">
+                <img src="graphs_top_bottom/DTI/DTI_MACD.png">
+                <img src="graphs_top_bottom/DTI/DTI_BOLLINGER_EMA.png">
+            </div>
+            
+            <div class="ticker-content" id="ticker-STTK">
+                <div class="weekly-context">
+                    <img
+                        class="chart"
+                        src="graphs_top_bottom/STTK/STTK_WEEKLY_CONTEXT.png"
+                        onerror="this.parentElement.style.display='none'"
+                    >
+                </div>
+                <img src="graphs_top_bottom/STTK/STTK_PRICE_STRUCTURE.png">
+                <img src="graphs_top_bottom/STTK/STTK_MACD.png">
+                <img src="graphs_top_bottom/STTK/STTK_BOLLINGER_EMA.png">
+            </div>
+            
+            <div class="ticker-content" id="ticker-NERV">
+                <div class="weekly-context">
+                    <img
+                        class="chart"
+                        src="graphs_top_bottom/NERV/NERV_WEEKLY_CONTEXT.png"
+                        onerror="this.parentElement.style.display='none'"
+                    >
+                </div>
+                <img src="graphs_top_bottom/NERV/NERV_PRICE_STRUCTURE.png">
+                <img src="graphs_top_bottom/NERV/NERV_MACD.png">
+                <img src="graphs_top_bottom/NERV/NERV_BOLLINGER_EMA.png">
+            </div>
+            
+            <div class="ticker-content" id="ticker-VOR">
+                <div class="weekly-context">
+                    <img
+                        class="chart"
+                        src="graphs_top_bottom/VOR/VOR_WEEKLY_CONTEXT.png"
+                        onerror="this.parentElement.style.display='none'"
+                    >
+                </div>
+                <img src="graphs_top_bottom/VOR/VOR_PRICE_STRUCTURE.png">
+                <img src="graphs_top_bottom/VOR/VOR_MACD.png">
+                <img src="graphs_top_bottom/VOR/VOR_BOLLINGER_EMA.png">
+            </div>
+            
+            <div class="ticker-content" id="ticker-DGII">
+                <div class="weekly-context">
+                    <img
+                        class="chart"
+                        src="graphs_top_bottom/DGII/DGII_WEEKLY_CONTEXT.png"
+                        onerror="this.parentElement.style.display='none'"
+                    >
+                </div>
+                <img src="graphs_top_bottom/DGII/DGII_PRICE_STRUCTURE.png">
+                <img src="graphs_top_bottom/DGII/DGII_MACD.png">
+                <img src="graphs_top_bottom/DGII/DGII_BOLLINGER_EMA.png">
+            </div>
+            
+            <div class="ticker-content" id="ticker-SND">
+                <div class="weekly-context">
+                    <img
+                        class="chart"
+                        src="graphs_top_bottom/SND/SND_WEEKLY_CONTEXT.png"
+                        onerror="this.parentElement.style.display='none'"
+                    >
+                </div>
+                <img src="graphs_top_bottom/SND/SND_PRICE_STRUCTURE.png">
+                <img src="graphs_top_bottom/SND/SND_MACD.png">
+                <img src="graphs_top_bottom/SND/SND_BOLLINGER_EMA.png">
+            </div>
+            
+            <div class="ticker-content" id="ticker-RIOT">
+                <div class="weekly-context">
+                    <img
+                        class="chart"
+                        src="graphs_top_bottom/RIOT/RIOT_WEEKLY_CONTEXT.png"
+                        onerror="this.parentElement.style.display='none'"
+                    >
+                </div>
+                <img src="graphs_top_bottom/RIOT/RIOT_PRICE_STRUCTURE.png">
+                <img src="graphs_top_bottom/RIOT/RIOT_MACD.png">
+                <img src="graphs_top_bottom/RIOT/RIOT_BOLLINGER_EMA.png">
+            </div>
+            
+            <div class="ticker-content" id="ticker-SBET">
+                <div class="weekly-context">
+                    <img
+                        class="chart"
+                        src="graphs_top_bottom/SBET/SBET_WEEKLY_CONTEXT.png"
+                        onerror="this.parentElement.style.display='none'"
+                    >
+                </div>
+                <img src="graphs_top_bottom/SBET/SBET_PRICE_STRUCTURE.png">
+                <img src="graphs_top_bottom/SBET/SBET_MACD.png">
+                <img src="graphs_top_bottom/SBET/SBET_BOLLINGER_EMA.png">
+            </div>
+            
+            <div class="ticker-content" id="ticker-SCWO">
+                <div class="weekly-context">
+                    <img
+                        class="chart"
+                        src="graphs_top_bottom/SCWO/SCWO_WEEKLY_CONTEXT.png"
+                        onerror="this.parentElement.style.display='none'"
+                    >
+                </div>
+                <img src="graphs_top_bottom/SCWO/SCWO_PRICE_STRUCTURE.png">
+                <img src="graphs_top_bottom/SCWO/SCWO_MACD.png">
+                <img src="graphs_top_bottom/SCWO/SCWO_BOLLINGER_EMA.png">
+            </div>
+            
+            <div class="ticker-content" id="ticker-PSNY">
+                <div class="weekly-context">
+                    <img
+                        class="chart"
+                        src="graphs_top_bottom/PSNY/PSNY_WEEKLY_CONTEXT.png"
+                        onerror="this.parentElement.style.display='none'"
+                    >
+                </div>
+                <img src="graphs_top_bottom/PSNY/PSNY_PRICE_STRUCTURE.png">
+                <img src="graphs_top_bottom/PSNY/PSNY_MACD.png">
+                <img src="graphs_top_bottom/PSNY/PSNY_BOLLINGER_EMA.png">
+            </div>
+            
+            <div class="ticker-content" id="ticker-TNGX">
+                <div class="weekly-context">
+                    <img
+                        class="chart"
+                        src="graphs_top_bottom/TNGX/TNGX_WEEKLY_CONTEXT.png"
+                        onerror="this.parentElement.style.display='none'"
+                    >
+                </div>
+                <img src="graphs_top_bottom/TNGX/TNGX_PRICE_STRUCTURE.png">
+                <img src="graphs_top_bottom/TNGX/TNGX_MACD.png">
+                <img src="graphs_top_bottom/TNGX/TNGX_BOLLINGER_EMA.png">
+            </div>
+            
+            <div class="ticker-content" id="ticker-FLWS">
+                <div class="weekly-context">
+                    <img
+                        class="chart"
+                        src="graphs_top_bottom/FLWS/FLWS_WEEKLY_CONTEXT.png"
+                        onerror="this.parentElement.style.display='none'"
+                    >
+                </div>
+                <img src="graphs_top_bottom/FLWS/FLWS_PRICE_STRUCTURE.png">
+                <img src="graphs_top_bottom/FLWS/FLWS_MACD.png">
+                <img src="graphs_top_bottom/FLWS/FLWS_BOLLINGER_EMA.png">
+            </div>
+            
+            <div class="ticker-content" id="ticker-FORM">
+                <div class="weekly-context">
+                    <img
+                        class="chart"
+                        src="graphs_top_bottom/FORM/FORM_WEEKLY_CONTEXT.png"
+                        onerror="this.parentElement.style.display='none'"
+                    >
+                </div>
+                <img src="graphs_top_bottom/FORM/FORM_PRICE_STRUCTURE.png">
+                <img src="graphs_top_bottom/FORM/FORM_MACD.png">
+                <img src="graphs_top_bottom/FORM/FORM_BOLLINGER_EMA.png">
+            </div>
+            
+            <div class="ticker-content" id="ticker-TATT">
+                <div class="weekly-context">
+                    <img
+                        class="chart"
+                        src="graphs_top_bottom/TATT/TATT_WEEKLY_CONTEXT.png"
+                        onerror="this.parentElement.style.display='none'"
+                    >
+                </div>
+                <img src="graphs_top_bottom/TATT/TATT_PRICE_STRUCTURE.png">
+                <img src="graphs_top_bottom/TATT/TATT_MACD.png">
+                <img src="graphs_top_bottom/TATT/TATT_BOLLINGER_EMA.png">
+            </div>
+            
+            <div class="ticker-content" id="ticker-TSAT">
+                <div class="weekly-context">
+                    <img
+                        class="chart"
+                        src="graphs_top_bottom/TSAT/TSAT_WEEKLY_CONTEXT.png"
+                        onerror="this.parentElement.style.display='none'"
+                    >
+                </div>
+                <img src="graphs_top_bottom/TSAT/TSAT_PRICE_STRUCTURE.png">
+                <img src="graphs_top_bottom/TSAT/TSAT_MACD.png">
+                <img src="graphs_top_bottom/TSAT/TSAT_BOLLINGER_EMA.png">
+            </div>
+            
+            <div class="ticker-content" id="ticker-RGLD">
+                <div class="weekly-context">
+                    <img
+                        class="chart"
+                        src="graphs_top_bottom/RGLD/RGLD_WEEKLY_CONTEXT.png"
+                        onerror="this.parentElement.style.display='none'"
+                    >
+                </div>
+                <img src="graphs_top_bottom/RGLD/RGLD_PRICE_STRUCTURE.png">
+                <img src="graphs_top_bottom/RGLD/RGLD_MACD.png">
+                <img src="graphs_top_bottom/RGLD/RGLD_BOLLINGER_EMA.png">
+            </div>
+            
+            <div class="ticker-content" id="ticker-SRTS">
+                <div class="weekly-context">
+                    <img
+                        class="chart"
+                        src="graphs_top_bottom/SRTS/SRTS_WEEKLY_CONTEXT.png"
+                        onerror="this.parentElement.style.display='none'"
+                    >
+                </div>
+                <img src="graphs_top_bottom/SRTS/SRTS_PRICE_STRUCTURE.png">
+                <img src="graphs_top_bottom/SRTS/SRTS_MACD.png">
+                <img src="graphs_top_bottom/SRTS/SRTS_BOLLINGER_EMA.png">
+            </div>
+            
+            <div class="ticker-content" id="ticker-WING">
+                <div class="weekly-context">
+                    <img
+                        class="chart"
+                        src="graphs_top_bottom/WING/WING_WEEKLY_CONTEXT.png"
+                        onerror="this.parentElement.style.display='none'"
+                    >
+                </div>
+                <img src="graphs_top_bottom/WING/WING_PRICE_STRUCTURE.png">
+                <img src="graphs_top_bottom/WING/WING_MACD.png">
+                <img src="graphs_top_bottom/WING/WING_BOLLINGER_EMA.png">
+            </div>
+            
+            <div class="ticker-content" id="ticker-ECX">
+                <div class="weekly-context">
+                    <img
+                        class="chart"
+                        src="graphs_top_bottom/ECX/ECX_WEEKLY_CONTEXT.png"
+                        onerror="this.parentElement.style.display='none'"
+                    >
+                </div>
+                <img src="graphs_top_bottom/ECX/ECX_PRICE_STRUCTURE.png">
+                <img src="graphs_top_bottom/ECX/ECX_MACD.png">
+                <img src="graphs_top_bottom/ECX/ECX_BOLLINGER_EMA.png">
+            </div>
+            
+            <div class="ticker-content" id="ticker-ACET">
+                <div class="weekly-context">
+                    <img
+                        class="chart"
+                        src="graphs_top_bottom/ACET/ACET_WEEKLY_CONTEXT.png"
+                        onerror="this.parentElement.style.display='none'"
+                    >
+                </div>
+                <img src="graphs_top_bottom/ACET/ACET_PRICE_STRUCTURE.png">
+                <img src="graphs_top_bottom/ACET/ACET_MACD.png">
+                <img src="graphs_top_bottom/ACET/ACET_BOLLINGER_EMA.png">
+            </div>
+            
+            <div class="ticker-content" id="ticker-USAR">
+                <div class="weekly-context">
+                    <img
+                        class="chart"
+                        src="graphs_top_bottom/USAR/USAR_WEEKLY_CONTEXT.png"
+                        onerror="this.parentElement.style.display='none'"
+                    >
+                </div>
+                <img src="graphs_top_bottom/USAR/USAR_PRICE_STRUCTURE.png">
+                <img src="graphs_top_bottom/USAR/USAR_MACD.png">
+                <img src="graphs_top_bottom/USAR/USAR_BOLLINGER_EMA.png">
+            </div>
+            
+            <div class="ticker-content" id="ticker-FDIG">
+                <div class="weekly-context">
+                    <img
+                        class="chart"
+                        src="graphs_top_bottom/FDIG/FDIG_WEEKLY_CONTEXT.png"
+                        onerror="this.parentElement.style.display='none'"
+                    >
+                </div>
+                <img src="graphs_top_bottom/FDIG/FDIG_PRICE_STRUCTURE.png">
+                <img src="graphs_top_bottom/FDIG/FDIG_MACD.png">
+                <img src="graphs_top_bottom/FDIG/FDIG_BOLLINGER_EMA.png">
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="group" id="group-Bottom 25">
+            <div class="ticker-list">
+                <button class="ticker-btn" onclick="showTicker('IMPP')">IMPP</button><button class="ticker-btn" onclick="showTicker('GUTS')">GUTS</button><button class="ticker-btn" onclick="showTicker('TARK')">TARK</button><button class="ticker-btn" onclick="showTicker('IPDN')">IPDN</button><button class="ticker-btn" onclick="showTicker('CORT')">CORT</button><button class="ticker-btn" onclick="showTicker('FIVN')">FIVN</button><button class="ticker-btn" onclick="showTicker('BDMD')">BDMD</button><button class="ticker-btn" onclick="showTicker('SAVA')">SAVA</button><button class="ticker-btn" onclick="showTicker('FFIV')">FFIV</button><button class="ticker-btn" onclick="showTicker('QDEL')">QDEL</button><button class="ticker-btn" onclick="showTicker('SAIL')">SAIL</button><button class="ticker-btn" onclick="showTicker('CRSR')">CRSR</button><button class="ticker-btn" onclick="showTicker('BUSE')">BUSE</button><button class="ticker-btn" onclick="showTicker('KURA')">KURA</button><button class="ticker-btn" onclick="showTicker('WAFD')">WAFD</button><button class="ticker-btn" onclick="showTicker('CMMB')">CMMB</button><button class="ticker-btn" onclick="showTicker('GMAB')">GMAB</button><button class="ticker-btn" onclick="showTicker('GRPN')">GRPN</button><button class="ticker-btn" onclick="showTicker('TKNO')">TKNO</button><button class="ticker-btn" onclick="showTicker('TRVI')">TRVI</button><button class="ticker-btn" onclick="showTicker('SOFX')">SOFX</button><button class="ticker-btn" onclick="showTicker('CIVB')">CIVB</button><button class="ticker-btn" onclick="showTicker('COEP')">COEP</button><button class="ticker-btn" onclick="showTicker('TLSI')">TLSI</button><button class="ticker-btn" onclick="showTicker('RICK')">RICK</button>
+            </div>
+            <div class="ticker-plots">
+                
+            <div class="ticker-content" id="ticker-IMPP">
+                <div class="weekly-context">
+                    <img
+                        class="chart"
+                        src="graphs_top_bottom/IMPP/IMPP_WEEKLY_CONTEXT.png"
+                        onerror="this.parentElement.style.display='none'"
+                    >
+                </div>
+                <img src="graphs_top_bottom/IMPP/IMPP_PRICE_STRUCTURE.png">
+                <img src="graphs_top_bottom/IMPP/IMPP_MACD.png">
+                <img src="graphs_top_bottom/IMPP/IMPP_BOLLINGER_EMA.png">
+            </div>
+            
+            <div class="ticker-content" id="ticker-GUTS">
+                <div class="weekly-context">
+                    <img
+                        class="chart"
+                        src="graphs_top_bottom/GUTS/GUTS_WEEKLY_CONTEXT.png"
+                        onerror="this.parentElement.style.display='none'"
+                    >
+                </div>
+                <img src="graphs_top_bottom/GUTS/GUTS_PRICE_STRUCTURE.png">
+                <img src="graphs_top_bottom/GUTS/GUTS_MACD.png">
+                <img src="graphs_top_bottom/GUTS/GUTS_BOLLINGER_EMA.png">
+            </div>
+            
+            <div class="ticker-content" id="ticker-TARK">
+                <div class="weekly-context">
+                    <img
+                        class="chart"
+                        src="graphs_top_bottom/TARK/TARK_WEEKLY_CONTEXT.png"
+                        onerror="this.parentElement.style.display='none'"
+                    >
+                </div>
+                <img src="graphs_top_bottom/TARK/TARK_PRICE_STRUCTURE.png">
+                <img src="graphs_top_bottom/TARK/TARK_MACD.png">
+                <img src="graphs_top_bottom/TARK/TARK_BOLLINGER_EMA.png">
+            </div>
+            
+            <div class="ticker-content" id="ticker-IPDN">
+                <div class="weekly-context">
+                    <img
+                        class="chart"
+                        src="graphs_top_bottom/IPDN/IPDN_WEEKLY_CONTEXT.png"
+                        onerror="this.parentElement.style.display='none'"
+                    >
+                </div>
+                <img src="graphs_top_bottom/IPDN/IPDN_PRICE_STRUCTURE.png">
+                <img src="graphs_top_bottom/IPDN/IPDN_MACD.png">
+                <img src="graphs_top_bottom/IPDN/IPDN_BOLLINGER_EMA.png">
+            </div>
+            
+            <div class="ticker-content" id="ticker-CORT">
+                <div class="weekly-context">
+                    <img
+                        class="chart"
+                        src="graphs_top_bottom/CORT/CORT_WEEKLY_CONTEXT.png"
+                        onerror="this.parentElement.style.display='none'"
+                    >
+                </div>
+                <img src="graphs_top_bottom/CORT/CORT_PRICE_STRUCTURE.png">
+                <img src="graphs_top_bottom/CORT/CORT_MACD.png">
+                <img src="graphs_top_bottom/CORT/CORT_BOLLINGER_EMA.png">
+            </div>
+            
+            <div class="ticker-content" id="ticker-FIVN">
+                <div class="weekly-context">
+                    <img
+                        class="chart"
+                        src="graphs_top_bottom/FIVN/FIVN_WEEKLY_CONTEXT.png"
+                        onerror="this.parentElement.style.display='none'"
+                    >
+                </div>
+                <img src="graphs_top_bottom/FIVN/FIVN_PRICE_STRUCTURE.png">
+                <img src="graphs_top_bottom/FIVN/FIVN_MACD.png">
+                <img src="graphs_top_bottom/FIVN/FIVN_BOLLINGER_EMA.png">
+            </div>
+            
+            <div class="ticker-content" id="ticker-BDMD">
+                <div class="weekly-context">
+                    <img
+                        class="chart"
+                        src="graphs_top_bottom/BDMD/BDMD_WEEKLY_CONTEXT.png"
+                        onerror="this.parentElement.style.display='none'"
+                    >
+                </div>
+                <img src="graphs_top_bottom/BDMD/BDMD_PRICE_STRUCTURE.png">
+                <img src="graphs_top_bottom/BDMD/BDMD_MACD.png">
+                <img src="graphs_top_bottom/BDMD/BDMD_BOLLINGER_EMA.png">
+            </div>
+            
+            <div class="ticker-content" id="ticker-SAVA">
+                <div class="weekly-context">
+                    <img
+                        class="chart"
+                        src="graphs_top_bottom/SAVA/SAVA_WEEKLY_CONTEXT.png"
+                        onerror="this.parentElement.style.display='none'"
+                    >
+                </div>
+                <img src="graphs_top_bottom/SAVA/SAVA_PRICE_STRUCTURE.png">
+                <img src="graphs_top_bottom/SAVA/SAVA_MACD.png">
+                <img src="graphs_top_bottom/SAVA/SAVA_BOLLINGER_EMA.png">
+            </div>
+            
+            <div class="ticker-content" id="ticker-FFIV">
+                <div class="weekly-context">
+                    <img
+                        class="chart"
+                        src="graphs_top_bottom/FFIV/FFIV_WEEKLY_CONTEXT.png"
+                        onerror="this.parentElement.style.display='none'"
+                    >
+                </div>
+                <img src="graphs_top_bottom/FFIV/FFIV_PRICE_STRUCTURE.png">
+                <img src="graphs_top_bottom/FFIV/FFIV_MACD.png">
+                <img src="graphs_top_bottom/FFIV/FFIV_BOLLINGER_EMA.png">
+            </div>
+            
+            <div class="ticker-content" id="ticker-QDEL">
+                <div class="weekly-context">
+                    <img
+                        class="chart"
+                        src="graphs_top_bottom/QDEL/QDEL_WEEKLY_CONTEXT.png"
+                        onerror="this.parentElement.style.display='none'"
+                    >
+                </div>
+                <img src="graphs_top_bottom/QDEL/QDEL_PRICE_STRUCTURE.png">
+                <img src="graphs_top_bottom/QDEL/QDEL_MACD.png">
+                <img src="graphs_top_bottom/QDEL/QDEL_BOLLINGER_EMA.png">
+            </div>
+            
+            <div class="ticker-content" id="ticker-SAIL">
+                <div class="weekly-context">
+                    <img
+                        class="chart"
+                        src="graphs_top_bottom/SAIL/SAIL_WEEKLY_CONTEXT.png"
+                        onerror="this.parentElement.style.display='none'"
+                    >
+                </div>
+                <img src="graphs_top_bottom/SAIL/SAIL_PRICE_STRUCTURE.png">
+                <img src="graphs_top_bottom/SAIL/SAIL_MACD.png">
+                <img src="graphs_top_bottom/SAIL/SAIL_BOLLINGER_EMA.png">
+            </div>
+            
+            <div class="ticker-content" id="ticker-CRSR">
+                <div class="weekly-context">
+                    <img
+                        class="chart"
+                        src="graphs_top_bottom/CRSR/CRSR_WEEKLY_CONTEXT.png"
+                        onerror="this.parentElement.style.display='none'"
+                    >
+                </div>
+                <img src="graphs_top_bottom/CRSR/CRSR_PRICE_STRUCTURE.png">
+                <img src="graphs_top_bottom/CRSR/CRSR_MACD.png">
+                <img src="graphs_top_bottom/CRSR/CRSR_BOLLINGER_EMA.png">
+            </div>
+            
+            <div class="ticker-content" id="ticker-BUSE">
+                <div class="weekly-context">
+                    <img
+                        class="chart"
+                        src="graphs_top_bottom/BUSE/BUSE_WEEKLY_CONTEXT.png"
+                        onerror="this.parentElement.style.display='none'"
+                    >
+                </div>
+                <img src="graphs_top_bottom/BUSE/BUSE_PRICE_STRUCTURE.png">
+                <img src="graphs_top_bottom/BUSE/BUSE_MACD.png">
+                <img src="graphs_top_bottom/BUSE/BUSE_BOLLINGER_EMA.png">
+            </div>
+            
+            <div class="ticker-content" id="ticker-KURA">
+                <div class="weekly-context">
+                    <img
+                        class="chart"
+                        src="graphs_top_bottom/KURA/KURA_WEEKLY_CONTEXT.png"
+                        onerror="this.parentElement.style.display='none'"
+                    >
+                </div>
+                <img src="graphs_top_bottom/KURA/KURA_PRICE_STRUCTURE.png">
+                <img src="graphs_top_bottom/KURA/KURA_MACD.png">
+                <img src="graphs_top_bottom/KURA/KURA_BOLLINGER_EMA.png">
+            </div>
+            
+            <div class="ticker-content" id="ticker-WAFD">
+                <div class="weekly-context">
+                    <img
+                        class="chart"
+                        src="graphs_top_bottom/WAFD/WAFD_WEEKLY_CONTEXT.png"
+                        onerror="this.parentElement.style.display='none'"
+                    >
+                </div>
+                <img src="graphs_top_bottom/WAFD/WAFD_PRICE_STRUCTURE.png">
+                <img src="graphs_top_bottom/WAFD/WAFD_MACD.png">
+                <img src="graphs_top_bottom/WAFD/WAFD_BOLLINGER_EMA.png">
+            </div>
+            
+            <div class="ticker-content" id="ticker-CMMB">
+                <div class="weekly-context">
+                    <img
+                        class="chart"
+                        src="graphs_top_bottom/CMMB/CMMB_WEEKLY_CONTEXT.png"
+                        onerror="this.parentElement.style.display='none'"
+                    >
+                </div>
+                <img src="graphs_top_bottom/CMMB/CMMB_PRICE_STRUCTURE.png">
+                <img src="graphs_top_bottom/CMMB/CMMB_MACD.png">
+                <img src="graphs_top_bottom/CMMB/CMMB_BOLLINGER_EMA.png">
+            </div>
+            
+            <div class="ticker-content" id="ticker-GMAB">
+                <div class="weekly-context">
+                    <img
+                        class="chart"
+                        src="graphs_top_bottom/GMAB/GMAB_WEEKLY_CONTEXT.png"
+                        onerror="this.parentElement.style.display='none'"
+                    >
+                </div>
+                <img src="graphs_top_bottom/GMAB/GMAB_PRICE_STRUCTURE.png">
+                <img src="graphs_top_bottom/GMAB/GMAB_MACD.png">
+                <img src="graphs_top_bottom/GMAB/GMAB_BOLLINGER_EMA.png">
+            </div>
+            
+            <div class="ticker-content" id="ticker-GRPN">
+                <div class="weekly-context">
+                    <img
+                        class="chart"
+                        src="graphs_top_bottom/GRPN/GRPN_WEEKLY_CONTEXT.png"
+                        onerror="this.parentElement.style.display='none'"
+                    >
+                </div>
+                <img src="graphs_top_bottom/GRPN/GRPN_PRICE_STRUCTURE.png">
+                <img src="graphs_top_bottom/GRPN/GRPN_MACD.png">
+                <img src="graphs_top_bottom/GRPN/GRPN_BOLLINGER_EMA.png">
+            </div>
+            
+            <div class="ticker-content" id="ticker-TKNO">
+                <div class="weekly-context">
+                    <img
+                        class="chart"
+                        src="graphs_top_bottom/TKNO/TKNO_WEEKLY_CONTEXT.png"
+                        onerror="this.parentElement.style.display='none'"
+                    >
+                </div>
+                <img src="graphs_top_bottom/TKNO/TKNO_PRICE_STRUCTURE.png">
+                <img src="graphs_top_bottom/TKNO/TKNO_MACD.png">
+                <img src="graphs_top_bottom/TKNO/TKNO_BOLLINGER_EMA.png">
+            </div>
+            
+            <div class="ticker-content" id="ticker-TRVI">
+                <div class="weekly-context">
+                    <img
+                        class="chart"
+                        src="graphs_top_bottom/TRVI/TRVI_WEEKLY_CONTEXT.png"
+                        onerror="this.parentElement.style.display='none'"
+                    >
+                </div>
+                <img src="graphs_top_bottom/TRVI/TRVI_PRICE_STRUCTURE.png">
+                <img src="graphs_top_bottom/TRVI/TRVI_MACD.png">
+                <img src="graphs_top_bottom/TRVI/TRVI_BOLLINGER_EMA.png">
+            </div>
+            
+            <div class="ticker-content" id="ticker-SOFX">
+                <div class="weekly-context">
+                    <img
+                        class="chart"
+                        src="graphs_top_bottom/SOFX/SOFX_WEEKLY_CONTEXT.png"
+                        onerror="this.parentElement.style.display='none'"
+                    >
+                </div>
+                <img src="graphs_top_bottom/SOFX/SOFX_PRICE_STRUCTURE.png">
+                <img src="graphs_top_bottom/SOFX/SOFX_MACD.png">
+                <img src="graphs_top_bottom/SOFX/SOFX_BOLLINGER_EMA.png">
+            </div>
+            
+            <div class="ticker-content" id="ticker-CIVB">
+                <div class="weekly-context">
+                    <img
+                        class="chart"
+                        src="graphs_top_bottom/CIVB/CIVB_WEEKLY_CONTEXT.png"
+                        onerror="this.parentElement.style.display='none'"
+                    >
+                </div>
+                <img src="graphs_top_bottom/CIVB/CIVB_PRICE_STRUCTURE.png">
+                <img src="graphs_top_bottom/CIVB/CIVB_MACD.png">
+                <img src="graphs_top_bottom/CIVB/CIVB_BOLLINGER_EMA.png">
+            </div>
+            
+            <div class="ticker-content" id="ticker-COEP">
+                <div class="weekly-context">
+                    <img
+                        class="chart"
+                        src="graphs_top_bottom/COEP/COEP_WEEKLY_CONTEXT.png"
+                        onerror="this.parentElement.style.display='none'"
+                    >
+                </div>
+                <img src="graphs_top_bottom/COEP/COEP_PRICE_STRUCTURE.png">
+                <img src="graphs_top_bottom/COEP/COEP_MACD.png">
+                <img src="graphs_top_bottom/COEP/COEP_BOLLINGER_EMA.png">
+            </div>
+            
+            <div class="ticker-content" id="ticker-TLSI">
+                <div class="weekly-context">
+                    <img
+                        class="chart"
+                        src="graphs_top_bottom/TLSI/TLSI_WEEKLY_CONTEXT.png"
+                        onerror="this.parentElement.style.display='none'"
+                    >
+                </div>
+                <img src="graphs_top_bottom/TLSI/TLSI_PRICE_STRUCTURE.png">
+                <img src="graphs_top_bottom/TLSI/TLSI_MACD.png">
+                <img src="graphs_top_bottom/TLSI/TLSI_BOLLINGER_EMA.png">
+            </div>
+            
+            <div class="ticker-content" id="ticker-RICK">
+                <div class="weekly-context">
+                    <img
+                        class="chart"
+                        src="graphs_top_bottom/RICK/RICK_WEEKLY_CONTEXT.png"
+                        onerror="this.parentElement.style.display='none'"
+                    >
+                </div>
+                <img src="graphs_top_bottom/RICK/RICK_PRICE_STRUCTURE.png">
+                <img src="graphs_top_bottom/RICK/RICK_MACD.png">
+                <img src="graphs_top_bottom/RICK/RICK_BOLLINGER_EMA.png">
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="group" id="group-Custom">
+            <div class="ticker-list">
+                <button class="ticker-btn" onclick="showTicker('MRNA')">MRNA</button><button class="ticker-btn" onclick="showTicker('INTC')">INTC</button><button class="ticker-btn" onclick="showTicker('RKLB')">RKLB</button><button class="ticker-btn" onclick="showTicker('ATLX')">ATLX</button><button class="ticker-btn" onclick="showTicker('ALGM')">ALGM</button><button class="ticker-btn" onclick="showTicker('PFE')">PFE</button><button class="ticker-btn" onclick="showTicker('AMC')">AMC</button><button class="ticker-btn" onclick="showTicker('NVDA')">NVDA</button><button class="ticker-btn" onclick="showTicker('TSEM')">TSEM</button><button class="ticker-btn" onclick="showTicker('AMD')">AMD</button><button class="ticker-btn" onclick="showTicker('AMSC')">AMSC</button><button class="ticker-btn" onclick="showTicker('ON')">ON</button><button class="ticker-btn" onclick="showTicker('PL')">PL</button><button class="ticker-btn" onclick="showTicker('TSM')">TSM</button><button class="ticker-btn" onclick="showTicker('NOK')">NOK</button><button class="ticker-btn" onclick="showTicker('TMC')">TMC</button><button class="ticker-btn" onclick="showTicker('TSLA')">TSLA</button><button class="ticker-btn" onclick="showTicker('GME')">GME</button>
+            </div>
+            <div class="ticker-plots">
+                
+            <div class="ticker-content" id="ticker-MRNA">
+                <div class="weekly-context">
+                    <img
+                        class="chart"
+                        src="graphs_top_bottom/MRNA/MRNA_WEEKLY_CONTEXT.png"
+                        onerror="this.parentElement.style.display='none'"
+                    >
+                </div>
+                <img src="graphs_top_bottom/MRNA/MRNA_PRICE_STRUCTURE.png">
+                <img src="graphs_top_bottom/MRNA/MRNA_MACD.png">
+                <img src="graphs_top_bottom/MRNA/MRNA_BOLLINGER_EMA.png">
+            </div>
+            
+            <div class="ticker-content" id="ticker-INTC">
+                <div class="weekly-context">
+                    <img
+                        class="chart"
+                        src="graphs_top_bottom/INTC/INTC_WEEKLY_CONTEXT.png"
+                        onerror="this.parentElement.style.display='none'"
+                    >
+                </div>
+                <img src="graphs_top_bottom/INTC/INTC_PRICE_STRUCTURE.png">
+                <img src="graphs_top_bottom/INTC/INTC_MACD.png">
+                <img src="graphs_top_bottom/INTC/INTC_BOLLINGER_EMA.png">
+            </div>
+            
+            <div class="ticker-content" id="ticker-RKLB">
+                <div class="weekly-context">
+                    <img
+                        class="chart"
+                        src="graphs_top_bottom/RKLB/RKLB_WEEKLY_CONTEXT.png"
+                        onerror="this.parentElement.style.display='none'"
+                    >
+                </div>
+                <img src="graphs_top_bottom/RKLB/RKLB_PRICE_STRUCTURE.png">
+                <img src="graphs_top_bottom/RKLB/RKLB_MACD.png">
+                <img src="graphs_top_bottom/RKLB/RKLB_BOLLINGER_EMA.png">
+            </div>
+            
+            <div class="ticker-content" id="ticker-ATLX">
+                <div class="weekly-context">
+                    <img
+                        class="chart"
+                        src="graphs_top_bottom/ATLX/ATLX_WEEKLY_CONTEXT.png"
+                        onerror="this.parentElement.style.display='none'"
+                    >
+                </div>
+                <img src="graphs_top_bottom/ATLX/ATLX_PRICE_STRUCTURE.png">
+                <img src="graphs_top_bottom/ATLX/ATLX_MACD.png">
+                <img src="graphs_top_bottom/ATLX/ATLX_BOLLINGER_EMA.png">
+            </div>
+            
+            <div class="ticker-content" id="ticker-ALGM">
+                <div class="weekly-context">
+                    <img
+                        class="chart"
+                        src="graphs_top_bottom/ALGM/ALGM_WEEKLY_CONTEXT.png"
+                        onerror="this.parentElement.style.display='none'"
+                    >
+                </div>
+                <img src="graphs_top_bottom/ALGM/ALGM_PRICE_STRUCTURE.png">
+                <img src="graphs_top_bottom/ALGM/ALGM_MACD.png">
+                <img src="graphs_top_bottom/ALGM/ALGM_BOLLINGER_EMA.png">
+            </div>
+            
+            <div class="ticker-content" id="ticker-PFE">
+                <div class="weekly-context">
+                    <img
+                        class="chart"
+                        src="graphs_top_bottom/PFE/PFE_WEEKLY_CONTEXT.png"
+                        onerror="this.parentElement.style.display='none'"
+                    >
+                </div>
+                <img src="graphs_top_bottom/PFE/PFE_PRICE_STRUCTURE.png">
+                <img src="graphs_top_bottom/PFE/PFE_MACD.png">
+                <img src="graphs_top_bottom/PFE/PFE_BOLLINGER_EMA.png">
+            </div>
+            
+            <div class="ticker-content" id="ticker-AMC">
+                <div class="weekly-context">
+                    <img
+                        class="chart"
+                        src="graphs_top_bottom/AMC/AMC_WEEKLY_CONTEXT.png"
+                        onerror="this.parentElement.style.display='none'"
+                    >
+                </div>
+                <img src="graphs_top_bottom/AMC/AMC_PRICE_STRUCTURE.png">
+                <img src="graphs_top_bottom/AMC/AMC_MACD.png">
+                <img src="graphs_top_bottom/AMC/AMC_BOLLINGER_EMA.png">
+            </div>
+            
+            <div class="ticker-content" id="ticker-NVDA">
+                <div class="weekly-context">
+                    <img
+                        class="chart"
+                        src="graphs_top_bottom/NVDA/NVDA_WEEKLY_CONTEXT.png"
+                        onerror="this.parentElement.style.display='none'"
+                    >
+                </div>
+                <img src="graphs_top_bottom/NVDA/NVDA_PRICE_STRUCTURE.png">
+                <img src="graphs_top_bottom/NVDA/NVDA_MACD.png">
+                <img src="graphs_top_bottom/NVDA/NVDA_BOLLINGER_EMA.png">
+            </div>
+            
+            <div class="ticker-content" id="ticker-TSEM">
+                <div class="weekly-context">
+                    <img
+                        class="chart"
+                        src="graphs_top_bottom/TSEM/TSEM_WEEKLY_CONTEXT.png"
+                        onerror="this.parentElement.style.display='none'"
+                    >
+                </div>
+                <img src="graphs_top_bottom/TSEM/TSEM_PRICE_STRUCTURE.png">
+                <img src="graphs_top_bottom/TSEM/TSEM_MACD.png">
+                <img src="graphs_top_bottom/TSEM/TSEM_BOLLINGER_EMA.png">
+            </div>
+            
+            <div class="ticker-content" id="ticker-AMD">
+                <div class="weekly-context">
+                    <img
+                        class="chart"
+                        src="graphs_top_bottom/AMD/AMD_WEEKLY_CONTEXT.png"
+                        onerror="this.parentElement.style.display='none'"
+                    >
+                </div>
+                <img src="graphs_top_bottom/AMD/AMD_PRICE_STRUCTURE.png">
+                <img src="graphs_top_bottom/AMD/AMD_MACD.png">
+                <img src="graphs_top_bottom/AMD/AMD_BOLLINGER_EMA.png">
+            </div>
+            
+            <div class="ticker-content" id="ticker-AMSC">
+                <div class="weekly-context">
+                    <img
+                        class="chart"
+                        src="graphs_top_bottom/AMSC/AMSC_WEEKLY_CONTEXT.png"
+                        onerror="this.parentElement.style.display='none'"
+                    >
+                </div>
+                <img src="graphs_top_bottom/AMSC/AMSC_PRICE_STRUCTURE.png">
+                <img src="graphs_top_bottom/AMSC/AMSC_MACD.png">
+                <img src="graphs_top_bottom/AMSC/AMSC_BOLLINGER_EMA.png">
+            </div>
+            
+            <div class="ticker-content" id="ticker-ON">
+                <div class="weekly-context">
+                    <img
+                        class="chart"
+                        src="graphs_top_bottom/ON/ON_WEEKLY_CONTEXT.png"
+                        onerror="this.parentElement.style.display='none'"
+                    >
+                </div>
+                <img src="graphs_top_bottom/ON/ON_PRICE_STRUCTURE.png">
+                <img src="graphs_top_bottom/ON/ON_MACD.png">
+                <img src="graphs_top_bottom/ON/ON_BOLLINGER_EMA.png">
+            </div>
+            
+            <div class="ticker-content" id="ticker-PL">
+                <div class="weekly-context">
+                    <img
+                        class="chart"
+                        src="graphs_top_bottom/PL/PL_WEEKLY_CONTEXT.png"
+                        onerror="this.parentElement.style.display='none'"
+                    >
+                </div>
+                <img src="graphs_top_bottom/PL/PL_PRICE_STRUCTURE.png">
+                <img src="graphs_top_bottom/PL/PL_MACD.png">
+                <img src="graphs_top_bottom/PL/PL_BOLLINGER_EMA.png">
+            </div>
+            
+            <div class="ticker-content" id="ticker-TSM">
+                <div class="weekly-context">
+                    <img
+                        class="chart"
+                        src="graphs_top_bottom/TSM/TSM_WEEKLY_CONTEXT.png"
+                        onerror="this.parentElement.style.display='none'"
+                    >
+                </div>
+                <img src="graphs_top_bottom/TSM/TSM_PRICE_STRUCTURE.png">
+                <img src="graphs_top_bottom/TSM/TSM_MACD.png">
+                <img src="graphs_top_bottom/TSM/TSM_BOLLINGER_EMA.png">
+            </div>
+            
+            <div class="ticker-content" id="ticker-NOK">
+                <div class="weekly-context">
+                    <img
+                        class="chart"
+                        src="graphs_top_bottom/NOK/NOK_WEEKLY_CONTEXT.png"
+                        onerror="this.parentElement.style.display='none'"
+                    >
+                </div>
+                <img src="graphs_top_bottom/NOK/NOK_PRICE_STRUCTURE.png">
+                <img src="graphs_top_bottom/NOK/NOK_MACD.png">
+                <img src="graphs_top_bottom/NOK/NOK_BOLLINGER_EMA.png">
+            </div>
+            
+            <div class="ticker-content" id="ticker-TMC">
+                <div class="weekly-context">
+                    <img
+                        class="chart"
+                        src="graphs_top_bottom/TMC/TMC_WEEKLY_CONTEXT.png"
+                        onerror="this.parentElement.style.display='none'"
+                    >
+                </div>
+                <img src="graphs_top_bottom/TMC/TMC_PRICE_STRUCTURE.png">
+                <img src="graphs_top_bottom/TMC/TMC_MACD.png">
+                <img src="graphs_top_bottom/TMC/TMC_BOLLINGER_EMA.png">
+            </div>
+            
+            <div class="ticker-content" id="ticker-TSLA">
+                <div class="weekly-context">
+                    <img
+                        class="chart"
+                        src="graphs_top_bottom/TSLA/TSLA_WEEKLY_CONTEXT.png"
+                        onerror="this.parentElement.style.display='none'"
+                    >
+                </div>
+                <img src="graphs_top_bottom/TSLA/TSLA_PRICE_STRUCTURE.png">
+                <img src="graphs_top_bottom/TSLA/TSLA_MACD.png">
+                <img src="graphs_top_bottom/TSLA/TSLA_BOLLINGER_EMA.png">
+            </div>
+            
+            <div class="ticker-content" id="ticker-GME">
+                <div class="weekly-context">
+                    <img
+                        class="chart"
+                        src="graphs_top_bottom/GME/GME_WEEKLY_CONTEXT.png"
+                        onerror="this.parentElement.style.display='none'"
+                    >
+                </div>
+                <img src="graphs_top_bottom/GME/GME_PRICE_STRUCTURE.png">
+                <img src="graphs_top_bottom/GME/GME_MACD.png">
+                <img src="graphs_top_bottom/GME/GME_BOLLINGER_EMA.png">
+            </div>
+            
+            </div>
+        </div>
+        
+        </div>
+
+        <script>
+            showGroup('Top 25');
+        </script>
+    </body>
+    </html>
+    
